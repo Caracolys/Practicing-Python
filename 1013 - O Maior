@@ -1,0 +1,14 @@
+def maior_ab(a, b):
+    return (a + b + abs(a - b)) // 2
+
+
+a, b, c = map(int, input().split())
+
+
+maior_ab_value = maior_ab(a, b)
+
+
+maior = maior_ab(maior_ab_value, c)
+
+
+print(f"{maior} eh o maior")
