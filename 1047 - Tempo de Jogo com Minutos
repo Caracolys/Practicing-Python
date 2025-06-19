@@ -1,0 +1,13 @@
+h_inicio, m_inicio, h_fim, m_fim = map(int, input().split())
+
+inicio_total = h_inicio * 60 + m_inicio
+fim_total = h_fim * 60 + m_fim
+
+if fim_total <= inicio_total:
+    fim_total += 24 * 60
+
+duracao = fim_total - inicio_total
+duracao_horas = duracao // 60
+duracao_minutos = duracao % 60
+
+print(f"O JOGO DUROU {duracao_horas} HORA(S) E {duracao_minutos} MINUTO(S)")
