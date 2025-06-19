@@ -1,0 +1,19 @@
+A, B, C = input().split()
+
+A = float(A)
+B = float(B)
+C = float(C)
+
+pi = 3.14159
+
+TRI = (A*C)/2
+CIR = pi * C**2
+TRAP = ((A+B)*C)/2
+QUA = B**2
+RET = A*B
+
+print (f'TRIANGULO: {TRI:.3f}')
+print (f'CIRCULO: {CIR:.3f}')
+print (f'TRAPEZIO: {TRAP:.3f}')
+print (f'QUADRADO: {QUA:.3f}')
+print (f'RETANGULO: {RET:.3f}')
